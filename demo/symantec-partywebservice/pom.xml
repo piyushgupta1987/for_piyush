@@ -1,0 +1,106 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>symantec</groupId>
+	<artifactId>symantec-partywebservice</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
+
+	<dependencies>
+		<!-- bed jar <dependency> <groupId>javax</groupId> <artifactId>javaee-api</artifactId> 
+			<version>6.0</version> <scope>provided</scope> </dependency> -->
+		<!-- for testing purpose adding the servlet and jsp jar -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>3.1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jsp-api</artifactId>
+			<version>2.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.symantec</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.16</version>
+			<scope>system</scope>
+			<systemPath>${basedir}/src/main/webapp/WEB-INF/lib/log4j-1.2.16.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>com.symantec</groupId>
+			<artifactId>wlthint3client</artifactId>
+			<version>9.7</version>
+			<scope>system</scope>
+			<systemPath>${basedir}/src/main/webapp/WEB-INF/lib/wlthint3client.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>com.symantec</groupId>
+			<artifactId>siperian-common</artifactId>
+			<version>9.7</version>
+			<scope>system</scope>
+			<systemPath>${basedir}/src/main/webapp/WEB-INF/lib//siperian-common.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>com.symantec</groupId>
+			<artifactId>siperian-api</artifactId>
+			<version>9.7</version>
+			<scope>system</scope>
+			<systemPath>${basedir}/src/main/webapp/WEB-INF/lib/siperian-api.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>com.symantec</groupId>
+			<artifactId>jaxb-api</artifactId>
+			<version>9.7</version>
+			<scope>system</scope>
+			<systemPath>${basedir}/src/main/webapp/WEB-INF/lib/jaxb-api-2.1.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.11</version>
+			<scope>test</scope>
+		</dependency>
+
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.1</version>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<configuration>
+					<failOnMissingWebXml>false</failOnMissingWebXml>
+				</configuration>
+			</plugin>
+			 <!-- wsgen plugins -->
+            <plugin>
+                <groupId>org.jvnet.jax-ws-commons</groupId>
+                <artifactId>jaxws-maven-plugin</artifactId>
+                <version>2.3</version>
+                <executions>
+                    <execution>
+                        <id>PartyServices</id>
+                        <goals>
+                            <goal>wsgen</goal>
+                        </goals>
+                        <configuration>
+                            <sei>com.symantec.partyservice.services.PartyServices</sei>
+                            <genWsdl>true</genWsdl>
+                            <resourceDestDir>src/main/resources/META-INF</resourceDestDir>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin> 
+		</plugins>
+	</build>
+</project>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Symantec Party Webservice</title>
+</head>
+<body>
+	<h1>Symantec Party Webservice</h1>
+	<label>MDM Connection Test (old): </label>
+	<a href="./oldConnectionTestServlet">CLICK HERE</a>
+	<br />
+
+	<label>MDM Connection (new): </label>
+	<br />
+	<form action="./newConnectionTestServlet" method="POST">
+		<table>
+			<tr>
+				<td>Username</td>
+				<td><input type="text" name="username" /></td>
+			</tr>
+			<tr>
+				<td>Password</td>
+				<td><input type="password" name="password" /></td>
+			</tr>
+			<tr>
+				<td><input type="reset" value="Reset"></td>
+				<td><input type="submit" value="Submit"></td>
+			</tr>
+		</table>
+	</form>
+
+	<br />
+	<label>To view the WSDL file : </label>
+	<a href="./service">WSDL (rpc)</a>
+	
+	<br/>
+	<label>Having problem to create a  client for this service :</label>
+	<a href="./clientHelp.html">Click here for help</a> 
+</body>
+</html>

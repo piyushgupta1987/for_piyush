@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://services.partyservice.symantec.com/" xmlns:tns="http://services.partyservice.symantec.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="SoapUserdefineException" type="tns:SoapUserdefineException"/>
+
+  <xs:element name="maintainParty" type="tns:maintainParty"/>
+
+  <xs:element name="maintainPartyResponse" type="tns:maintainPartyResponse"/>
+
+  <xs:element name="mdmCredential" nillable="true" type="tns:mdmCredential"/>
+
+  <xs:complexType name="maintainParty">
+    <xs:sequence>
+      <xs:element name="partyRequest" type="tns:partyRequest" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="partyRequest">
+    <xs:sequence>
+      <xs:element name="address" type="tns:cbPrtyAddr" minOccurs="0"/>
+      <xs:element name="party" type="tns:cbPrty" minOccurs="0"/>
+      <xs:element name="prtyname" type="tns:cbPrtyNm" minOccurs="0"/>
+      <xs:element name="srcsysrefdtls" type="tns:cbSrcSysRefDtls" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="cbPrtyAddr">
+    <xs:complexContent>
+      <xs:extension base="tns:siperianSystemObjects">
+        <xs:sequence>
+          <xs:element name="addrHashKey" type="xs:string" minOccurs="0"/>
+          <xs:element name="addrLine1Txt" type="xs:string" minOccurs="0"/>
+          <xs:element name="addrLine2Txt" type="xs:string" minOccurs="0"/>
+          <xs:element name="addrLine3Txt" type="xs:string" minOccurs="0"/>
+          <xs:element name="addrLine4Txt" type="xs:string" minOccurs="0"/>
+          <xs:element name="addrMailablScore" type="xs:decimal" minOccurs="0"/>
+          <xs:element name="addrPrtyId" type="xs:string" minOccurs="0"/>
+          <xs:element name="addrRsdlTxt" type="xs:string" minOccurs="0"/>
+          <xs:element name="addrVldMsg" type="xs:string" minOccurs="0"/>
+          <xs:element name="addrVldTypCd" type="xs:string" minOccurs="0"/>
+          <xs:element name="addrVldTypCdFlg" type="xs:string" minOccurs="0"/>
+          <xs:element name="carrRteTxt" type="xs:string" minOccurs="0"/>
+          <xs:element name="cityNm" type="xs:string" minOccurs="0"/>
+          <xs:element name="cntyNm" type="xs:string" minOccurs="0"/>
+          <xs:element name="ctryIso2Cd" type="xs:string" minOccurs="0"/>
+          <xs:element name="dwlngTypCd" type="xs:string" minOccurs="0"/>
+          <xs:element name="latCd" type="xs:string" minOccurs="0"/>
+          <xs:element name="locCoordDesc" type="xs:string" minOccurs="0"/>
+          <xs:element name="lonCd" type="xs:string" minOccurs="0"/>
+          <xs:element name="prtyRowid" type="xs:string" minOccurs="0"/>
+          <xs:element name="pstlCd" type="xs:string" minOccurs="0"/>
+          <xs:element name="pstlCdExtn" type="xs:string" minOccurs="0"/>
+          <xs:element name="rawAddrPart1Txt" type="xs:string" minOccurs="0"/>
+          <xs:element name="rawAddrPart2Txt" type="xs:string" minOccurs="0"/>
+          <xs:element name="regsAddrFlg" type="xs:string" minOccurs="0"/>
+          <xs:element name="srcSystem" type="xs:string" minOccurs="0"/>
+          <xs:element name="stCd" type="xs:string" minOccurs="0"/>
+          <xs:element name="stCtryIso2Cd" type="xs:string" minOccurs="0"/>
+          <xs:element name="timeZnCd" type="xs:string" minOccurs="0"/>
+          <xs:element name="useForPrtyMtchFlg" type="xs:string" minOccurs="0"/>
+          <xs:element name="vrfyAddrFlg" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="siperianSystemObjects">
+    <xs:sequence>
+      <xs:element name="lastUpdateDate" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="pkeySrcObject" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="cbPrty">
+    <xs:complexContent>
+      <xs:extension base="tns:siperianSystemObjects">
+        <xs:sequence>
+          <xs:element name="blklstFlg" type="xs:string" minOccurs="0"/>
+          <xs:element name="creditRatingCd" type="xs:string" minOccurs="0"/>
+          <xs:element name="dnbFlg" type="xs:string" minOccurs="0"/>
+          <xs:element name="dontShrExtrFlg" type="xs:string" minOccurs="0"/>
+          <xs:element name="dontShrIntrnlFlg" type="xs:string" minOccurs="0"/>
+          <xs:element name="imPrtyFlg" type="xs:string" minOccurs="0"/>
+          <xs:element name="isPrtyFlg" type="xs:string" minOccurs="0"/>
+          <xs:element name="mbrCnt" type="xs:decimal" minOccurs="0"/>
+          <xs:element name="optOutFlg" type="xs:string" minOccurs="0"/>
+          <xs:element name="outOfBusnFlg" type="xs:string" minOccurs="0"/>
+          <xs:element name="partySubtypeClassCd" type="xs:string" minOccurs="0"/>
+          <xs:element name="prtyDesc" type="xs:string" minOccurs="0"/>
+          <xs:element name="prtyFdtnDt" type="xs:string" minOccurs="0"/>
+          <xs:element name="prtyFstPrchDt" type="xs:string" minOccurs="0"/>
+          <xs:element name="prtyFullNm" type="xs:string" minOccurs="0"/>
+          <xs:element name="prtyNum" type="xs:string" minOccurs="0"/>
+          <xs:element name="prtyStsCd" type="xs:string" minOccurs="0"/>
+          <xs:element name="recvPtnrCntctFlg" type="xs:string" minOccurs="0"/>
+          <xs:element name="rowidObject" type="xs:string" minOccurs="0"/>
+          <xs:element name="srcSystem" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="cbPrtyNm">
+    <xs:complexContent>
+      <xs:extension base="tns:siperianSystemObjects">
+        <xs:sequence>
+          <xs:element name="nmTypCd" type="xs:string" minOccurs="0"/>
+          <xs:element name="prtyMtchKeyAttr" type="xs:string" minOccurs="0"/>
+          <xs:element name="prtyNm" type="xs:string" minOccurs="0"/>
+          <xs:element name="prtyRowid" type="xs:string" minOccurs="0"/>
+          <xs:element name="rawPrtyNm" type="xs:string" minOccurs="0"/>
+          <xs:element name="srcSystem" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="cbSrcSysRefDtls">
+    <xs:complexContent>
+      <xs:extension base="tns:siperianSystemObjects">
+        <xs:sequence>
+          <xs:element name="erpCustActId" type="xs:string" minOccurs="0"/>
+          <xs:element name="erpCustActSiteId" type="xs:string" minOccurs="0"/>
+          <xs:element name="erpCustActSiteOrgId" type="xs:string" minOccurs="0"/>
+          <xs:element name="erpCustActSiteStsCd" type="xs:string" minOccurs="0"/>
+          <xs:element name="erpLocationId" type="xs:string" minOccurs="0"/>
+          <xs:element name="erpPrtyId" type="xs:string" minOccurs="0"/>
+          <xs:element name="erpPrtySiteId" type="xs:string" minOccurs="0"/>
+          <xs:element name="erpPrtySiteNum" type="xs:string" minOccurs="0"/>
+          <xs:element name="erpPrtySiteStsCd" type="xs:string" minOccurs="0"/>
+          <xs:element name="erpSlsChnlCd" type="xs:string" minOccurs="0"/>
+          <xs:element name="primFlg" type="xs:string" minOccurs="0"/>
+          <xs:element name="prtyRowid" type="xs:string" minOccurs="0"/>
+          <xs:element name="sfdcActId" type="xs:string" minOccurs="0"/>
+          <xs:element name="sfdcActStsCd" type="xs:string" minOccurs="0"/>
+          <xs:element name="sfdcAxaptaId" type="xs:string" minOccurs="0"/>
+          <xs:element name="sfdcCntctId" type="xs:string" minOccurs="0"/>
+          <xs:element name="sfdcRecType" type="xs:string" minOccurs="0"/>
+          <xs:element name="sfdcSobjectType" type="xs:string" minOccurs="0"/>
+          <xs:element name="srcPkId" type="xs:string" minOccurs="0"/>
+          <xs:element name="srcSystem" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="mdmCredential">
+    <xs:sequence>
+      <xs:element name="password" type="xs:string" minOccurs="0"/>
+      <xs:element name="username" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="maintainPartyResponse">
+    <xs:sequence>
+      <xs:element name="partyResponse" type="tns:partyResponse" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="partyResponse">
+    <xs:sequence>
+      <xs:element name="rowidObject" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="SoapUserdefineException">
+    <xs:sequence>
+      <xs:element name="message" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+
