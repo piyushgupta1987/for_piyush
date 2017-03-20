@@ -2,76 +2,78 @@ package model;
 
 public class BoProductOrigin {
 	
-	private String src_Status ;
-	private String orgn_Cntry ;
-	private String prim_Orgn ;
-	private String rowid_Prod ;
-	private String orgn_Cd ;
-	private String med_Dev_Listing ;
-	private String source_From_Gtc ;
-	private String ansell_Plant ;
-	private String estab_Facility_Id ;
-	private String code_510K ;
-	public String getSrc_Status() {
-		return src_Status;
+	private String srcStatus ;
+	private String orgnCntry ;
+	private String primOrgn ;
+	private String rowidProd ;
+	private String orgnCd ;
+	private String medDevListing ;
+	private String sourceFromGtc ;
+	private String ansellPlant ;
+	private String estabFacilityId ;
+	private String code510K ;
+	
+	public String getSrcStatus() {
+		return srcStatus;
 	}
-	public void setSrc_Status(String src_Status) {
-		this.src_Status = src_Status;
+	public void setSrcStatus(String srcStatus) {
+		this.srcStatus = srcStatus;
 	}
-	public String getOrgn_Cntry() {
-		return orgn_Cntry;
+	public String getOrgnCntry() {
+		return orgnCntry;
 	}
-	public void setOrgn_Cntry(String orgn_Cntry) {
-		this.orgn_Cntry = orgn_Cntry;
+	public void setOrgnCntry(String orgnCntry) {
+		this.orgnCntry = orgnCntry;
 	}
-	public String getPrim_Orgn() {
-		return prim_Orgn;
+	public String getPrimOrgn() {
+		return primOrgn;
 	}
-	public void setPrim_Orgn(String prim_Orgn) {
-		this.prim_Orgn = prim_Orgn;
+	public void setPrimOrgn(String primOrgn) {
+		this.primOrgn = primOrgn;
 	}
-	public String getRowid_Prod() {
-		return rowid_Prod;
+	public String getRowidProd() {
+		return rowidProd;
 	}
-	public void setRowid_Prod(String rowid_Prod) {
-		this.rowid_Prod = rowid_Prod;
+	public void setRowidProd(String rowidProd) {
+		this.rowidProd = rowidProd;
 	}
-	public String getOrgn_Cd() {
-		return orgn_Cd;
+	public String getOrgnCd() {
+		return orgnCd;
 	}
-	public void setOrgn_Cd(String orgn_Cd) {
-		this.orgn_Cd = orgn_Cd;
+	public void setOrgnCd(String orgnCd) {
+		this.orgnCd = orgnCd;
 	}
-	public String getMed_Dev_Listing() {
-		return med_Dev_Listing;
+	public String getMedDevListing() {
+		return medDevListing;
 	}
-	public void setMed_Dev_Listing(String med_Dev_Listing) {
-		this.med_Dev_Listing = med_Dev_Listing;
+	public void setMedDevListing(String medDevListing) {
+		this.medDevListing = medDevListing;
 	}
-	public String getSource_From_Gtc() {
-		return source_From_Gtc;
+	public String getSourceFromGtc() {
+		return sourceFromGtc;
 	}
-	public void setSource_From_Gtc(String source_From_Gtc) {
-		this.source_From_Gtc = source_From_Gtc;
+	public void setSourceFromGtc(String sourceFromGtc) {
+		this.sourceFromGtc = sourceFromGtc;
 	}
-	public String getAnsell_Plant() {
-		return ansell_Plant;
+	public String getAnsellPlant() {
+		return ansellPlant;
 	}
-	public void setAnsell_Plant(String ansell_Plant) {
-		this.ansell_Plant = ansell_Plant;
+	public void setAnsellPlant(String ansellPlant) {
+		this.ansellPlant = ansellPlant;
 	}
-	public String getEstab_Facility_Id() {
-		return estab_Facility_Id;
+	public String getEstabFacilityId() {
+		return estabFacilityId;
 	}
-	public void setEstab_Facility_Id(String estab_Facility_Id) {
-		this.estab_Facility_Id = estab_Facility_Id;
+	public void setEstabFacilityId(String estabFacilityId) {
+		this.estabFacilityId = estabFacilityId;
 	}
-	public String getCode_510K() {
-		return code_510K;
+	public String getCode510K() {
+		return code510K;
 	}
-	public void setCode_510K(String code_510k) {
-		code_510K = code_510k;
+	public void setCode510K(String code510k) {
+		code510K = code510k;
 	}
-
+	
+	
 
 }

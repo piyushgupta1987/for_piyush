@@ -2,98 +2,98 @@ package model;
 
 public class BoProductPkg {
 
-	private String ext_Case_Net_Wt ;
-	private String gtin_Inner ;
-	private String ext_Case_Gross_Wt ;
-	private String rowid_Prod ;
-	private String ext_Case_Width ;
-	private String ext_Case_Height ;
-	private String ext_Case_Length ;
-	private String ext_Case_Volume ;
-	private String gtin_Unit ;
-	private String ean_Outer ;
-	private String gtin_Outer ;
-	private String ean_Inner ;
-	private String ean_Unit ;
+	private String extCaseNetWt ;
+	private String gtinInner ;
+	private String extCaseGrossWt ;
+	private String rowidProd ;
+	private String extCaseWidth ;
+	private String extCaseHeight ;
+	private String extCaseLength ;
+	private String extCaseVolume ;
+	private String gtinUnit ;
+	private String eanOuter ;
+	private String gtinOuter ;
+	private String eanInner ;
+	private String eanUnit ;
 	
-	public String getExt_Case_Net_Wt() {
-		return ext_Case_Net_Wt;
+	public String getExtCaseNetWt() {
+		return extCaseNetWt;
 	}
-	public void setExt_Case_Net_Wt(String ext_Case_Net_Wt) {
-		this.ext_Case_Net_Wt = ext_Case_Net_Wt;
+	public void setExtCaseNetWt(String extCaseNetWt) {
+		this.extCaseNetWt = extCaseNetWt;
 	}
-	public String getGtin_Inner() {
-		return gtin_Inner;
+	public String getGtinInner() {
+		return gtinInner;
 	}
-	public void setGtin_Inner(String gtin_Inner) {
-		this.gtin_Inner = gtin_Inner;
+	public void setGtinInner(String gtinInner) {
+		this.gtinInner = gtinInner;
 	}
-	public String getExt_Case_Gross_Wt() {
-		return ext_Case_Gross_Wt;
+	public String getExtCaseGrossWt() {
+		return extCaseGrossWt;
 	}
-	public void setExt_Case_Gross_Wt(String ext_Case_Gross_Wt) {
-		this.ext_Case_Gross_Wt = ext_Case_Gross_Wt;
+	public void setExtCaseGrossWt(String extCaseGrossWt) {
+		this.extCaseGrossWt = extCaseGrossWt;
 	}
-	public String getRowid_Prod() {
-		return rowid_Prod;
+	public String getRowidProd() {
+		return rowidProd;
 	}
-	public void setRowid_Prod(String rowid_Prod) {
-		this.rowid_Prod = rowid_Prod;
+	public void setRowidProd(String rowidProd) {
+		this.rowidProd = rowidProd;
 	}
-	public String getExt_Case_Width() {
-		return ext_Case_Width;
+	public String getExtCaseWidth() {
+		return extCaseWidth;
 	}
-	public void setExt_Case_Width(String ext_Case_Width) {
-		this.ext_Case_Width = ext_Case_Width;
+	public void setExtCaseWidth(String extCaseWidth) {
+		this.extCaseWidth = extCaseWidth;
 	}
-	public String getExt_Case_Height() {
-		return ext_Case_Height;
+	public String getExtCaseHeight() {
+		return extCaseHeight;
 	}
-	public void setExt_Case_Height(String ext_Case_Height) {
-		this.ext_Case_Height = ext_Case_Height;
+	public void setExtCaseHeight(String extCaseHeight) {
+		this.extCaseHeight = extCaseHeight;
 	}
-	public String getExt_Case_Length() {
-		return ext_Case_Length;
+	public String getExtCaseLength() {
+		return extCaseLength;
 	}
-	public void setExt_Case_Length(String ext_Case_Length) {
-		this.ext_Case_Length = ext_Case_Length;
+	public void setExtCaseLength(String extCaseLength) {
+		this.extCaseLength = extCaseLength;
 	}
-	public String getExt_Case_Volume() {
-		return ext_Case_Volume;
+	public String getExtCaseVolume() {
+		return extCaseVolume;
 	}
-	public void setExt_Case_Volume(String ext_Case_Volume) {
-		this.ext_Case_Volume = ext_Case_Volume;
+	public void setExtCaseVolume(String extCaseVolume) {
+		this.extCaseVolume = extCaseVolume;
 	}
-	public String getGtin_Unit() {
-		return gtin_Unit;
+	public String getGtinUnit() {
+		return gtinUnit;
 	}
-	public void setGtin_Unit(String gtin_Unit) {
-		this.gtin_Unit = gtin_Unit;
+	public void setGtinUnit(String gtinUnit) {
+		this.gtinUnit = gtinUnit;
 	}
-	public String getEan_Outer() {
-		return ean_Outer;
+	public String getEanOuter() {
+		return eanOuter;
 	}
-	public void setEan_Outer(String ean_Outer) {
-		this.ean_Outer = ean_Outer;
+	public void setEanOuter(String eanOuter) {
+		this.eanOuter = eanOuter;
 	}
-	public String getGtin_Outer() {
-		return gtin_Outer;
+	public String getGtinOuter() {
+		return gtinOuter;
 	}
-	public void setGtin_Outer(String gtin_Outer) {
-		this.gtin_Outer = gtin_Outer;
+	public void setGtinOuter(String gtinOuter) {
+		this.gtinOuter = gtinOuter;
 	}
-	public String getEan_Inner() {
-		return ean_Inner;
+	public String getEanInner() {
+		return eanInner;
 	}
-	public void setEan_Inner(String ean_Inner) {
-		this.ean_Inner = ean_Inner;
+	public void setEanInner(String eanInner) {
+		this.eanInner = eanInner;
 	}
-	public String getEan_Unit() {
-		return ean_Unit;
+	public String getEanUnit() {
+		return eanUnit;
 	}
-	public void setEan_Unit(String ean_Unit) {
-		this.ean_Unit = ean_Unit;
+	public void setEanUnit(String eanUnit) {
+		this.eanUnit = eanUnit;
 	}
-
+	
 	
 }
